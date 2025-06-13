@@ -6,7 +6,7 @@ import Swal from "sweetalert2";
 
 // =======================================================
 // 전역상수
-export const CM_HOME_PAGE_NAME = "ed9719.cafe24app.com";
+export const CM_HOME_PAGE_NAME = "xyz.cafe24app.com";
 export const CM_CD_GROUP_ID_ETC = "__XXXX__";
 export const CM_CD_NEW_TEMP_SEQ_MAX = 10000;
 export const CM_CD_IS_INVALID = "is-invalid";
