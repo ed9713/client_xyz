@@ -1,0 +1,91 @@
+@import "../../../assets/styles/main.scss";
+
+$HEADER-HEIGHT: 56px;
+$FOOTER-HEIGHT: 50px;
+$NAVIGATION-HEIGHT: 50px;
+
+
+.cd0000FormBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // vertical-align: middle;
+    // justify-content: flex-start;
+    // width: 100%;
+    // height: 100vh;
+    // background: pink;
+    // padding: 10px 50px 10px 50px;   
+    padding-top: 10px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+
+    @media screen and (max-width: 500px) 
+    {
+        padding-right: 0px;
+        padding-left: 0px;    
+    }
+    
+    &__title{
+        width: 400px;
+        height: 100px;
+        // vertical-align:bottom;
+        align-content: center;
+        // background: #65b0c7;
+        padding-left: 5px;
+        font-size: 25px;
+    }
+
+
+    &__contents{
+
+        width: 100%;
+        padding-bottom: 10px;
+
+        &__ttTitle {
+            width: 100%;
+            height : 1px;
+            background: gray;
+            margin-bottom: 1px;
+        }
+
+        &__ttAdd {
+            width: 100%;
+            height : 40px;            
+            // margin-bottom: 20px;
+            text-align: right;
+        }
+
+        &__ttButton {
+            width: 100%;
+            height : 40px;            
+            // margin-bottom: 20px;
+            text-align: right;
+            // background: red;
+            button {
+                width: 140px;
+            }
+        }
+
+        &__connerListHeader {
+            border-style: solid;
+            border-width: 1px;
+            border-color: white;            
+            border-bottom-color: rgb(0, 0, 0);
+            padding-bottom: 10px;     
+            margin-bottom: 10px;    
+            text-align: left;               
+        }
+
+        &__center {
+            width: 100%;
+            height : 40px;            
+            // margin-bottom: 20px;
+            text-align: center;
+            align-items: center;
+            vertical-align: top;
+            // background: red;
+        }
+
+    }
+}    

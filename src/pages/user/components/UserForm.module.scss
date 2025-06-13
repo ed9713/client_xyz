@@ -1,0 +1,58 @@
+@import "../../../assets/styles/main.scss";
+
+$HEADER-HEIGHT: 56px;
+$FOOTER-HEIGHT: 50px;
+$NAVIGATION-HEIGHT: 50px;
+
+
+.userFormBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // vertical-align: middle;
+    // justify-content: flex-start;
+    // width: 100%;
+    // height: 100vh;
+    // background: pink;
+    padding: 10px 50px 10px 50px;   
+
+    @media screen and (max-width: 500px) 
+    {
+        padding-right: 0px;
+        padding-left: 0px;    
+    }
+    
+    
+
+    &__contents{
+
+        width: 100%;
+        &__emailXX{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            // justify-content: left;
+            width: 100%;
+            // background: gray;
+            // grid-template-columns: 300px 19px auto;
+
+            &__id {
+                width: 300px;
+            }
+
+            &__address {
+                width: 19px;
+            }
+            &__domain {
+                width: 300px;
+            }
+        }
+
+        &__email {
+            display: grid;
+            // grid-template-columns: repeat(3, 1fr) ;
+            grid-template-columns: 300px 19px 300px;
+        }
+    }
+
+}    

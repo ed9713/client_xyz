@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+}
+
+.noUnderlineDefault{
+  text-decoration: none;
+  color: black;
+}
+
+.cursorPointer {
+  cursor: pointer
+}
+
+.cmTitle{
+  width: 50%;
+  height: 30px;
+  align-content: center;
+  padding-left: 5px;
+  font-size: 25px;  
+}
+
+.cmDetailTitle{
+
+    width: 100%;
+    height : 50px;
+    align-items: center;
+    vertical-align: middle;
+    /* color: #0c63e4;
+    background-color: #e7f1ff; */
+    color: #ffffff;
+    background-color: #8098f9;
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .125);
+    margin: 20px 0px 10px 0px ;
+    padding: 10px 0px 10px 15px  ;    
+    font-size: 20px;
+}
+
+
+.cmBottom {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  vertical-align: bottom;
+}
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, pre {
+    word-break: break-all;
+}
+
+
+
+			.text {
+				display: -webkit-box; /* 텍스트 내용을 가로로 확장할 때 사용할 레이아웃 형식을 설정 */
+				overflow: hidden; /* 내용이 컨테이너를 벗어나는 경우 숨김 처리 */
+				text-overflow: ellipsis; /* 텍스트가 가로로 너무 길 때, 말줄임(...)을 표시 */
+				-webkit-line-clamp: 5; /* 표시할 줄 수를 제한 */
+				-webkit-box-orient: vertical; /* 텍스트 블록을 세로로 배치 */
+				/* width: 510px;
+				padding: 0 10px;
+				font-size: 14px; */
+				line-height: 24px;
+			}
+			.more {
+				float: right; /* 더보기 버튼의 위치 조정 */
+				margin-top: 90px; /* 더보기 버튼의 위치 조정 */
+				height: 10px;
+				line-height: 14px; /* 텍스트 라인의 높이를 14px로 설정 (버튼 내부 텍스트의 수직 정렬) */
+				padding: 3px 5px 3px 150px; /* 안쪽 여백 설정 - 더보기 버튼 크기를 조절함 */
+				shape-outside: border-box; /* 텍스트 흐름 밖의 모양을 설정 (박스 모양으로 설정) */
+			}
+

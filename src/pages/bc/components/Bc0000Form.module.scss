@@ -1,0 +1,180 @@
+@import "../../../assets/styles/main.scss";
+
+$HEADER-HEIGHT: 56px;
+$FOOTER-HEIGHT: 50px;
+$NAVIGATION-HEIGHT: 50px;
+
+
+.bc0000FormBody {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // vertical-align: middle;
+    // justify-content: flex-start;
+    // width: 100%;
+    // height: 100vh;
+    // background: pink;
+    // padding: 10px 50px 10px 50px;   
+    padding-top: 10px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+
+    @media screen and (max-width: 500px) 
+    {
+        padding-right: 0px;
+        padding-left: 0px;    
+    }
+    
+    &__title{
+        width: 400px;
+        height: 100px;
+        // vertical-align:bottom;
+        align-content: center;
+        // background: #65b0c7;
+        padding-left: 5px;
+        font-size: 25px;
+    }
+
+
+    &__contents{
+
+        width: 100%;
+        padding-bottom: 10px;
+        
+        &__itemCenter {
+            text-align: center;
+            align-items: center;
+        }
+
+        &__connerSearchBar {
+            padding-top: 10px;            
+        }
+
+        &__center {
+            width: 100%;
+            height : 40px;            
+            // margin-bottom: 20px;
+            text-align: center;
+            align-items: center;
+            vertical-align: top;
+            // background: red;
+        }
+
+        &__connerListHeader {
+            border-style: solid;
+            border-width: 1px;
+            border-color: white;            
+            border-bottom-color: rgb(0, 0, 0);
+            padding-bottom: 10px;     
+            margin-bottom: 10px;    
+            text-align: center;               
+        }
+
+
+        &__test {
+            background: red;
+        }
+
+        &__border {
+            border-style: solid;
+            border-width: 1px;
+            border-color: rgb(221, 221, 221);                            
+            padding: 10px;                        
+        }
+
+
+        &__ttTitle {
+            width: 100%;
+            height : 1px;
+            background: gray;
+            margin-bottom: 1px;
+        }
+
+        &__ttAdd {
+            width: 100%;
+            height : 40px;            
+            // margin-bottom: 20px;
+            text-align: right;
+        }
+
+        &__ttButton {
+            width: 100%;
+            height : 40px;            
+            // margin-bottom: 20px;
+            text-align: right;
+            align-items: right;
+            vertical-align: top;
+            // background: red;
+            button {
+                width: 140px;
+            }
+        }
+
+        &__ttButtonCenter {
+            width: 100%;
+            height : 40px;            
+            // margin-bottom: 20px;
+            text-align: center;
+            align-items: center;
+            vertical-align: top;
+            // background: red;
+        }
+
+
+        &__deleteItem {
+            background: red;
+        }
+
+        &__timeTable{
+
+            .accordion-button {
+                position: relative;
+                display: flex;
+                align-items: center;
+                width: 100%;
+                padding: 1rem 1.25rem;
+                font-size: 1rem;
+                color: #212529;
+                text-align: left;
+                background-color: #fff;
+                border: 0;
+                border-radius: 0;
+                overflow-anchor: none;
+                transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, border-radius .15s ease;
+            }
+
+            &__header{
+                width: 100%;
+                height : 50px;
+                align-items: center;
+                vertical-align: middle;
+                color: #0c63e4;
+                background-color: #e7f1ff;
+                // color: #344054;
+                // background-color:  #ececec;
+                box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .125);
+                margin: 0px 0px 5px 0px ;
+                padding: 10px 0px 0px 15px;
+                // border: 3px solid blue;
+            }
+
+            &__body{
+                width: 100%;
+                margin: 10px 0px 10px 0px ;
+                padding: 5px 0px 5px 20px;
+                // border: 3px solid red;
+            }
+
+			&__open {
+				float: right; /* 더보기 버튼의 위치 조정 */
+				margin-top: 0px; /* 더보기 버튼의 위치 조정 */
+				height: 10px;
+				line-height: 14px; /* 텍스트 라인의 높이를 14px로 설정 (버튼 내부 텍스트의 수직 정렬) */
+				padding: 3px 5px 3px 0px; /* 안쪽 여백 설정 - 더보기 버튼 크기를 조절함 */
+				shape-outside: border-box; /* 텍스트 흐름 밖의 모양을 설정 (박스 모양으로 설정) */
+			}
+        }
+    }
+}    
